@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,80 +12,153 @@
   <link rel="icon" href="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      AOS.init();
-    });
-  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <style>
+    .slick-dots li button:before { color: white !important; }
+    .slick-dots li.slick-active button:before { color: #fff !important; }
+    .dynamic-card { transition: all 0.3s ease; }
+    .dynamic-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    .timeline { border-left: 2px solid #fff; padding-left: 20px; }
+    .timeline-item { margin-bottom: 30px; transition: all 0.3s ease; }
+    .timeline-item:hover { transform: translateX(5px); }
+  </style>
 </head>
 <body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white font-sans">
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="fixed top-6 right-6 z-50 p-2 rounded-full bg-gray-800 hover:bg-gray-700">🌙</button>
+
+  <!-- Header -->
   <header class="relative w-full h-screen overflow-hidden">
-    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-    </video>
+    <div id="threejs-bg" class="absolute inset-0"></div>
     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-4 z-10">
-      <img src="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" alt="Alisufiyan Shaikh" class="w-40 h-40 rounded-full mb-6 border-4 border-white shadow-lg z-20" />
+      <img src="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" class="w-40 h-40 rounded-full mb-6 border-4 border-white shadow-lg z-20" />
       <h1 class="text-5xl sm:text-6xl font-bold mb-4 animate-pulse font-serif" id="typing"></h1>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const text = "Alisufiyan Shaikh";
-          let index = 0;
-          const typingElement = document.getElementById("typing");
-          function type() {
-            if (index < text.length) {
-              typingElement.textContent += text.charAt(index);
-              index++;
-              setTimeout(type, 100);
-            }
-          }
-          type();
-        });
-      </script>
       <p class="text-xl sm:text-2xl font-medium mb-4">Political Strategist | eSports Leader | Media Architect</p>
       <p class="text-lg max-w-2xl text-gray-300">Forging dominance across arenas—where politics, media, and gaming collide with clarity and vision.</p>
+      <div id="github-stats" class="flex gap-4 mt-6 text-sm">
+        <span class="flex items-center gap-1">🔗 <span id="github-repos">Loading...</span></span>
+        <span class="flex items-center gap-1">👥 <span id="github-followers">Loading...</span></span>
+      </div>
     </div>
   </header>
 
+  <!-- Autobiography -->
   <section class="py-20 px-6 md:px-20" data-aos="fade-up">
     <h2 class="text-3xl font-bold mb-6">Autobiography</h2>
-    <p class="text-lg leading-relaxed text-gray-300 max-w-4xl">
-      I am Alisufiyan Shaikh, born on the 25th of June, 2005, to Mohammad Irfan Ibrahim Shaikh, a man whose unwavering principles, intellectual discipline, and grounded vision laid the foundation for my trajectory.<br><br>
-      Widely recognized as "Sufiyan Anna Ji" and "Ali Bhau," I represent a distinct blend of cultural gravitas and emerging leadership. These designations are not colloquial—they signify stature, earned respect, and domain influence across diverse communities.<br><br>
-      My path is defined not by convention, but by deliberate disruption. I operate at the nexus of political insight, media command, and high-performance digital ecosystems—including top-tier competitive eSports. Every endeavor is meticulously architected, with a focus on systemic impact, not superficial visibility.<br><br>
-      This is more than a narrative—it is a manifesto. I do not adapt to systems; I engineer new standards.
-    </p>
-  </section>
-
-  <section class="py-16 px-6 md:px-20 text-center" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-6">Follow Me</h2>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="https://instagram.com/alisufiyanshaxx" target="_blank" class="bg-white text-black px-5 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Instagram</a>
-      <a href="https://x.com/alisufiyanshaxx" target="_blank" class="border border-white px-5 py-2 rounded-full font-semibold hover:bg-white hover:text-black transition">X</a>
-      <a href="https://www.youtube.com/@alisufiyanshaxx" target="_blank" class="border border-white px-5 py-2 rounded-full font-semibold hover:bg-white hover:text-black transition">YouTube</a>
-      <a href="https://www.pinterest.com/alisufiyanshaxx" target="_blank" class="border border-white px-5 py-2 rounded-full font-semibold hover:bg-white hover:text-black transition">Pinterest</a>
-      <a href="https://www.threads.net/@alisufiyanshaxx" target="_blank" class="border border-white px-5 py-2 rounded-full font-semibold hover:bg-white hover:text-black transition">Threads</a>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <h3 class="text-xl font-bold">2005</h3>
+        <p class="text-lg text-gray-300">I am Alisufiyan Shaikh, born on 25 June 2005. Raised under discipline, forged by vision.</p>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <h3 class="text-xl font-bold">Present</h3>
+        <p class="text-lg text-gray-300">Known as "Sufiyan Anna Ji" and "Ali Bhau"—cross-community influence, digital authority, cultural dominance.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Testimonials -->
+  <section class="py-20 px-6 md:px-20 bg-gray-900" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">What Others Say</h2>
+    <div class="testimonials-slider">
+      <div class="dynamic-card bg-gray-800 p-6 rounded-lg mx-4">“A leader who speaks with execution.” – Imran Desai</div>
+      <div class="dynamic-card bg-gray-800 p-6 rounded-lg mx-4">“Bridges politics and digital mastery.” – Rev. Thomas R.</div>
+      <div class="dynamic-card bg-gray-800 p-6 rounded-lg mx-4">“One of the sharpest minds in modern youth strategy.” – Pandit V.S. Bhargav</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section class="py-20 px-6 md:px-20" data-aos="fade-up">
     <h2 class="text-3xl font-bold mb-6">Contact</h2>
-    <form action="https://formspree.io/f/xvgrdver" method="POST" class="space-y-4 max-w-xl" enctype="multipart/form-data" accept-charset="UTF-8">
+    <form action="https://formspree.io/f/xvgrdver" method="POST" class="space-y-4 max-w-xl">
       <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded bg-gray-800 border border-gray-700 text-white" />
       <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded bg-gray-800 border border-gray-700 text-white" />
       <textarea name="message" placeholder="Your Message" rows="5" required class="w-full p-2 rounded bg-gray-800 border border-gray-700 text-white"></textarea>
-      <button type="submit" class="bg-white text-black px-6 py-2 rounded hover:bg-gray-300">Send Message</button>
+      <button type="submit" class="bg-white text-black px-6 py-2 rounded hover:bg-gray-300 transition">Send Message</button>
     </form>
   </section>
 
+  <!-- Footer -->
   <footer class="py-10 px-6 md:px-20 bg-gray-950 border-t border-gray-700 text-center">
-    <p class="text-gray-400 text-sm mb-2">
-      For business inquiries: <a href="mailto:alisufiyanshaxx@gmail.com" class="text-white underline">alisufiyanshaxx@gmail.com</a>
-    </p>
-    <p class="text-gray-500 text-xs">
-      &copy; 2025 Alisufiyan Shaikh. All rights reserved. Trademark and content protected under applicable intellectual property laws.
-    </p>
+    <p class="text-gray-400 text-sm mb-2">Contact: <a href="mailto:alisufiyanshaxx@gmail.com" class="text-white underline">alisufiyanshaxx@gmail.com</a></p>
+    <p class="text-gray-500 text-xs">&copy; 2025 Alisufiyan Shaikh. All rights reserved.</p>
     <p class="text-gray-600 text-sm mt-2 italic">“I don’t adapt to systems—I engineer new standards.”</p>
   </footer>
+
+  <script>
+    // Typing animation
+    const text = "Alisufiyan Shaikh";
+    let index = 0;
+    const typingElement = document.getElementById("typing");
+    function type() {
+      if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100);
+      }
+    }
+    type();
+
+    // Three.js background
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x000000, 0);
+    document.getElementById('threejs-bg').appendChild(renderer.domElement);
+
+    const particlesGeometry = new THREE.BufferGeometry();
+    const particlesCount = 1000;
+    const posArray = new Float32Array(particlesCount * 3);
+    for (let i = 0; i < particlesCount * 3; i++) posArray[i] = (Math.random() - 0.5) * 10;
+    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+    const particlesMaterial = new THREE.PointsMaterial({ size: 0.02, color: 0xffffff, transparent: true, opacity: 0.8 });
+    const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+    scene.add(particlesMesh);
+    camera.position.z = 3;
+    function animate() {
+      requestAnimationFrame(animate);
+      particlesMesh.rotation.x += 0.001;
+      particlesMesh.rotation.y += 0.001;
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // GitHub API Fetch
+    fetch('https://api.github.com/users/alisufiyanshaikh')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('github-repos').textContent = `${data.public_repos} Repos`;
+        document.getElementById('github-followers').textContent = `${data.followers} Followers`;
+      });
+
+    // Slick carousel
+    $('.testimonials-slider').slick({
+      dots: true, infinite: true, speed: 500,
+      slidesToShow: 1, adaptiveHeight: true,
+      autoplay: true, autoplaySpeed: 3000,
+    });
+
+    // AOS animations
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+
+    // Dark/light mode
+    const themeToggle = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+    if (currentTheme === 'dark') document.documentElement.classList.add('dark');
+    themeToggle.textContent = currentTheme === 'dark' ? '🌞' : '🌙';
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      themeToggle.textContent = isDark ? '🌞' : '🌙';
+    });
+  </script>
 </body>
 </html>
