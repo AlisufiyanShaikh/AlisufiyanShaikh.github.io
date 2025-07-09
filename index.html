@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="xTm9d0zBNlfEkLFqTX-nvSbwrweMQ6TrwCLVfXTAMZs" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="xTm9d0zBNlfEkLFqTX-nvSbwrweMQ6TrwCLVfXTAMZs" />
+  <meta name="description" content="Strategist. Influencer. Game-changer. The digital command center of Alisufiyan Shaikh." />
+  <meta name="author" content="Alisufiyan Shaikh" />
+  <meta name="robots" content="index, follow" />
   <title>Alisufiyan Shaikh | Portfolio</title>
+  <link rel="icon" href="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" type="image/png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Alisufiyan Shaikh | Portfolio" />
+  <meta property="og:description" content="Dominating digital, gaming, and strategic landscapes." />
+  <meta property="og:image" content="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" />
+  <meta property="og:url" content="https://alisufiyanshaikh.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alisufiyan Shaikh Official" />
+  <meta name="twitter:description" content="Strategist. Influencer. Game-changer. The digital command center of Alisufiyan Shaikh." />
+  <meta name="twitter:image" content="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" />
+  <meta name="twitter:site" content="@alisufiyanshaxx" />
 
   <!-- Schema -->
   <script type="application/ld+json">
@@ -37,31 +52,25 @@
   }
   </script>
 
-  <!-- SEO & Social -->
-  <meta name="description" content="Strategist. Influencer. Game-changer. The digital command center of Alisufiyan Shaikh." />
-  <meta name="author" content="Alisufiyan Shaikh" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Alisufiyan Shaikh | Portfolio" />
-  <meta property="og:description" content="Dominating digital, gaming, and strategic landscapes." />
-  <meta property="og:image" content="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" />
-  <meta property="og:url" content="https://alisufiyanshaikh.github.io/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Alisufiyan Shaikh Official" />
-  <meta name="twitter:description" content="Strategist. Influencer. Game-changer. The digital command center of Alisufiyan Shaikh." />
-  <meta name="twitter:image" content="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" />
-  <meta name="twitter:site" content="@alisufiyanshaxx" />
-  <link rel="icon" href="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJERM8RMVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FJERM8RMVV');
+  </script>
 
-  <!-- Scripts & Styles -->
+  <!-- CSS & JS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
   <style>
     .timeline { border-left: 2px solid #fff; padding-left: 20px; }
@@ -75,7 +84,7 @@
 
 <body class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white font-sans">
 
-  <!-- Header -->
+  <!-- Hero -->
   <header class="relative w-full h-screen overflow-hidden">
     <div id="threejs-bg" class="absolute inset-0"></div>
     <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-4 z-10">
@@ -154,6 +163,7 @@
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('threejs-bg').appendChild(renderer.domElement);
+
     const particles = new THREE.BufferGeometry();
     const count = 1000;
     const posArray = new Float32Array(count * 3);
@@ -163,6 +173,7 @@
     const points = new THREE.Points(particles, material);
     scene.add(points);
     camera.position.z = 3;
+
     function animate() {
       requestAnimationFrame(animate);
       points.rotation.y += 0.001;
@@ -172,4 +183,4 @@
     animate();
   </script>
 </body>
-        </html>
+</html>
