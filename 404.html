@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 | Alisufiyan Shaikh</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" type="image/jpeg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(to bottom right, #111827, #1f2937); }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJERM8RMVV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FJERM8RMVV');
+    gtag('event', '404_error', {
+      'event_category': 'Error',
+      'event_label': document.referrer || 'Direct',
+      'page_path': window.location.pathname
+    });
+  </script>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen text-white text-center px-6 py-10">
+  <img src="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" alt="Alisufiyan Shaikh" class="w-24 h-24 rounded-full border-4 border-white shadow-lg mb-6" />
+
+  <h1 class="text-6xl font-extrabold mb-2">404</h1>
+  <p class="text-xl mb-1">Page Not Found</p>
+  <p class="text-gray-400 italic mb-6">“I don’t adapt to systems—I engineer new standards.”</p>
+
+  <!-- Search Field -->
+  <input type="text" placeholder="Search the site..." class="mt-2 mb-6 px-4 py-2 rounded-full text-black w-full max-w-md mx-auto shadow-inner" onkeydown="if(event.key==='Enter'){window.location.href='https://www.google.com/search?q=site:alisufiyanshaikh.github.io '+this.value}" />
+
+  <!-- Sitemap Links -->
+  <div class="space-x-4 mb-10">
+    <a href="/" class="text-white underline hover:text-gray-300">Home</a>
+    <a href="/about-me/" class="text-white underline hover:text-gray-300">About</a>
+    <a href="/blog/" class="text-white underline hover:text-gray-300">Blog</a>
+    <a href="/contact/" class="text-white underline hover:text-gray-300">Contact</a>
+  </div>
+
+  <!-- CTA Button -->
+  <a href="/" class="inline-block px-6 py-2 bg-white text-black rounded-full font-semibold hover:bg-gray-300 transition">
+    Go to Homepage
+  </a>
+</body>
+</html>
