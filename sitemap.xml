@@ -16,6 +16,22 @@
     <priority>0.90</priority>
   </url>
 
+  <!-- About Me - Hindi -->
+  <url>
+    <loc>https://alisufiyanshaikh.github.io/about-me/hi/</loc>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- About Me - Kannada -->
+  <url>
+    <loc>https://alisufiyanshaikh.github.io/about-me/kn/</loc>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
   <!-- Contact -->
   <url>
     <loc>https://alisufiyanshaikh.github.io/contact/</loc>
