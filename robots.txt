@@ -1,4 +1,42 @@
+# Global access to all crawlers
 User-agent: *
 Allow: /
 
+# Explicit Google AdsBot (desktop)
+User-agent: AdsBot-Google
+Allow: /
+
+# Google AdsBot for mobile
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Google Search web crawler
+User-agent: Googlebot
+Allow: /
+
+# Googlebot for mobile-first indexing
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Googlebot for image indexing
+User-agent: Googlebot-Image
+Allow: /
+
+# Microsoft Bing crawler
+User-agent: bingbot
+Allow: /
+
+# LinkedIn link preview bot
+User-agent: LinkedInBot
+Allow: /
+
+# Facebook & Instagram scraper
+User-agent: FacebookExternalHit
+Allow: /
+
+# Twitter card fetch bot
+User-agent: Twitterbot
+Allow: /
+
+# Primary sitemap declaration
 Sitemap: https://alisufiyanshaikh.github.io/sitemap.xml
