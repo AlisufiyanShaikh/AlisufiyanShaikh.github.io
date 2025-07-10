@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
   <url>
     <loc>https://alisufiyanshaikh.github.io/</loc>
-    <lastmod>2025-06-29</lastmod>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Me -->
+  <url>
+    <loc>https://alisufiyanshaikh.github.io/about-me/</loc>
+    <lastmod>2025-07-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://alisufiyanshaikh.github.io/contact/</loc>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 404 Page -->
+  <url>
+    <loc>https://alisufiyanshaikh.github.io/404.html</loc>
+    <lastmod>2025-07-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.10</priority>
   </url>
 </urlset>
