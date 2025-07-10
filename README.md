@@ -1,36 +1,20 @@
-# Alisufiyan Shaikh
+<h1 align="center">🌍 Alisufiyan Shaikh</h1>
+<p align="center">
+  <b>Digital Strategist | Esports Analyst | Brand Systems Architect</b><br>
+  Bridging storytelling, design thinking, and competitive gaming to engineer impact across platforms.
+</p>
 
-Public-facing strategist with growing influence in digital media, esports leadership, and branding architecture. Known online as [@alisufiyanshaxx](https://instagram.com/alisufiyanshaxx).
-
----
-
-## 🧠 Expertise
-
-- HTML & Responsive Layouts  
-- Tailwind CSS  
-- Typed.js, AOS, and Three.js  
-- GitHub Pages Deployment  
-- High-Performance Digital Portfolio Strategy
+<p align="center">
+  <img src="https://res.cloudinary.com/dpm27lokj/image/upload/v1751126335/IMG_20250429_140003_711_u0aftl.jpg" width="160" alt="Alisufiyan Shaikh" style="border-radius: 50%; border: 4px solid #ccc;" />
+</p>
 
 ---
 
-## 🌐 Live Portfolio
+## 🧠 Core Capabilities
 
-🔗 [Visit My Portfolio](https://alisufiyanshaikh.github.io/komal/)
-
----
-
-## 📲 Social Media Presence
-
-- 📸 [Instagram](https://instagram.com/alisufiyanshaxx)
-- 🐦 [X (Twitter)](https://x.com/alisufiyanshaxx)
-- ▶️ [YouTube](https://youtube.com/@alisufiyanshaxx)
-- 📌 [Pinterest](https://pinterest.com/alisufiyanshaxx)
-- 💬 [Threads](https://threads.net/@alisufiyanshaxx)
-
----
-
-## 📫 Contact
-
-For inquiries or collaborations, reach out at:  
-📧 [alisufiyanshaxx@gmail.com](mailto:alisufiyanshaxx@gmail.com)
+```txt
+• Responsive UX Engineering      → HTML5, Tailwind CSS, GitHub Pages
+• Interactive Storytelling       → Typed.js, AOS, Three.js
+• Digital Asset Optimization     → SEO, Open Graph, Schema Markup
+• Strategic Identity Design      → Branding Systems + Multiplatform Consistency
+• Vision-led Execution           → Cross-functional command in digital narratives
